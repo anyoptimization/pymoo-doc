@@ -3,12 +3,12 @@ from pymoo.factory import get_problem
 from pymoo.optimize import minimize
 
 
-problem = get_problem("ackley", n_var=30)
+problem = get_problem("ackley", n_var=20)
 
 algorithm = DE(
     pop_size=100,
-    variant="DE/best/1/bin",
-    CR=0.7,
+    variant="DE/rand/1/bin",
+    CR=0.3,
     dither="vector",
     jitter=True
 )

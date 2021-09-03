@@ -17,5 +17,3 @@ IPYNBS = [e for e in files_from_folder(DOCS, regex='**/*.ipynb', skip=SKIP) if "
 def test_docs(ipynb):
     run_ipynb(ipynb, overwrite=OVERWRITE, remove_trailing_empty_cells=True)
     assert True
-
-
