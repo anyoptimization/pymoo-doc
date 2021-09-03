@@ -9,12 +9,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: nelonoel/branch-name@v1.0.1
+      - uses: nelonoel/branch-name@v1
       - uses: actions/checkout@v2
-      - uses: actions/checkout@v2
-        with:
-          repository: msu-coinlab/pymoo
-          ref: ${BRANCH_NAME}
       - name: Install Python 3
         uses: actions/setup-python@v2
         with:
@@ -23,7 +19,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install numpy
-          pip install pymoo/
+          curl -L http://github.com/msu-coinlab/pymoo/archive/${BRANCH_NAME}.zip --output pymoo.zip
+          unzip -qq pymoo.zip
+          pip install pymoo-${BRANCH_NAME}/
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
