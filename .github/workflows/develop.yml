@@ -25,3 +25,11 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+  compile:
+    runs-on: ubuntu-latest
+    needs: installation
+    steps:
+      - name: Compile Documentation
+        run: |
+          make html
+
