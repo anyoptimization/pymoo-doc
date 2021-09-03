@@ -34,7 +34,7 @@ jobs:
         with:
           RSYNC_OPTIONS: -avzr --delete --exclude '*.ipynb'
           RSYNC_TARGET: /home/blankjul/pymoo.org/$(echo $GITHUB_REF | cut -d'/' -f 3)
-          RSYNC_SOURCE: /doc/build/html/*
+          RSYNC_SOURCE: /build/html/*
         env:
           SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
           SSH_USERNAME: ${{secrets.SSH_USERNAME}}
