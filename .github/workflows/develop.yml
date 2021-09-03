@@ -9,7 +9,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: nelonoel/branch-name@v1
+      - uses: nelonoel/branch-name@v1.0.1
       - uses: actions/checkout@v2
       - name: Install Python 3
         uses: actions/setup-python@v2
