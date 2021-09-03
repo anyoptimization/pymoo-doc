@@ -28,6 +28,11 @@ jobs:
           unzip -qq pymoo.zip
           pip install pymoo-${BRANCH_NAME}/
       - name: Tests
+        if:
+          contains('
+          refs/heads/master
+          refs/heads/release
+          ', github.ref)
         run: |
           pytest tests/test_docs.py --exitfirst
       - name: Compile
