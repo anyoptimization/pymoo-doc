@@ -28,9 +28,6 @@ import pymoo
 from pymoo.configuration import Configuration
 Configuration.parse_custom_docs = True
 
-import matplotlib as mpl
-mpl.rcParams['figure.dpi'] = 200
-
 DEBUG = True
 
 # -- Project information -----------------------------------------------------
