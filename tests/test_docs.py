@@ -8,7 +8,7 @@ DOCS = os.path.join(ROOT, "source")
 
 OVERWRITE = True
 
-SKIP = ["parallelization.ipynb", "video.ipynb", "modact.ipynb"]
+SKIP = ["parallelization.ipynb", "video.ipynb", "modact.ipynb", "dascomp.ipynb"]
 
 IPYNBS = [e for e in files_from_folder(DOCS, regex='**/*.ipynb', skip=SKIP) if ".ipynb_checkpoints" not in e]
 
