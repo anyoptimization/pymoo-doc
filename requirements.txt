@@ -1,0 +1,10 @@
+sphinx
+numpydoc
+nbsphinx
+sphinxcontrib-bibtex<2.0.0
+pydata-sphinx-theme
+ipython
+pygments
+bs4
+pandoc
+sphinx_book_theme
