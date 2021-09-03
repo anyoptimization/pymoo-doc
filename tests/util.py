@@ -42,7 +42,7 @@ def run_ipynb(fname, overwrite=False, remove_trailing_empty_cells=False):
     import nbformat
     from nbconvert.preprocessors import CellExecutionError, ExecutePreprocessor
 
-    ep = ExecutePreprocessor(timeout=10000, kernel_name='python3')
+    ep = ExecutePreprocessor(timeout=10000)
 
     print(fname.split("/")[-1])
 
