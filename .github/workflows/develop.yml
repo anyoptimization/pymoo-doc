@@ -6,10 +6,15 @@ on:
 
 jobs:
 
-  compilation:
+  update:
     runs-on: ubuntu-latest
     steps:
+      - uses: nelonoel/branch-name@v1
       - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          repository: msu-coinlab/pymoo
+          ref: ${BRANCH_NAME}
       - name: Install Python 3
         uses: actions/setup-python@v2
         with:
@@ -18,14 +23,21 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install numpy
-          curl -L http://github.com/msu-coinlab/pymoo/archive/release.zip --output pymoo.zip
-          unzip -qq pymoo.zip
-          pip install pymoo-release/
+          pip install pymoo/
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
-          sudo apt-get install pandoc
-      - name: Compile Documentation
+          sudo apt-get install pandoc rsync
+      - name: Compile
         run: |
           make html
-
+      - name: Upload
+        uses: trendyminds/github-actions-rsync@master
+        with:
+          RSYNC_OPTIONS: -avzr --delete --exclude '*.ipynb'
+          RSYNC_TARGET: /home/blankjul/pymoo.org/$(echo $GITHUB_REF | cut -d'/' -f 3)
+          RSYNC_SOURCE: /doc/build/html/*
+        env:
+          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+          SSH_USERNAME: ${{secrets.SSH_USERNAME}}
+          SSH_HOSTNAME: ${{secrets.SSH_HOSTNAME}}
