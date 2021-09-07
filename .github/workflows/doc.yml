@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - master
-      - develop
       - release
+      - develop
 
 jobs:
 
@@ -27,14 +27,11 @@ jobs:
           curl -L http://github.com/msu-coinlab/pymoo/archive/${BRANCH_NAME}.zip --output pymoo.zip
           unzip -qq pymoo.zip
           pip install pymoo-${BRANCH_NAME}/
-      - name: Tests
-        if:
-          contains('
-          refs/heads/master
-          refs/heads/release
-          ', github.ref)
+      - name: Jupyter Config
         run: |
-          pytest tests/test_docs.py --exitfirst
+          echo "c = get_config()" >> ~/.ipython/profile_default/ipython_kernel_config.py
+          echo "c.InlineBackend.figure_format = 'retina'" >> ~/.ipython/profile_default/ipython_kernel_config.py
+          echo "c.InteractiveShellApp.matplotlib = 'inline'" >> ~/.ipython/profile_default/ipython_kernel_config.py
       - name: Compile
         run: |
           make html

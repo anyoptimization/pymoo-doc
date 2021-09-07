@@ -2,7 +2,7 @@ import numpy as np
 
 import autograd.numpy as anp
 
-from pymoo.model.problem import Problem
+from pymoo.core.problem import Problem
 
 """
 ============================================

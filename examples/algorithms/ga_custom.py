@@ -1,6 +1,6 @@
 import numpy as np
 
-from pymoo.model.problem import ElementwiseProblem
+from pymoo.core.problem import ElementwiseProblem
 
 
 class SubsetProblem(ElementwiseProblem):
@@ -23,9 +23,9 @@ L = np.array([np.random.randint(100) for _ in range(100)])
 n_max = 10
 problem = SubsetProblem(L, n_max)
 
-from pymoo.model.crossover import Crossover
-from pymoo.model.mutation import Mutation
-from pymoo.model.sampling import Sampling
+from pymoo.core.crossover import Crossover
+from pymoo.core.mutation import Mutation
+from pymoo.core.sampling import Sampling
 
 
 class MySampling(Sampling):

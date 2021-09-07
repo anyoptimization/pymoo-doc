@@ -2,8 +2,8 @@ import numpy as np
 
 from pymoo.algorithms.soo.nonconvex.ga import GA
 from pymoo.factory import get_problem
-from pymoo.model.evaluator import Evaluator
-from pymoo.model.population import Population
+from pymoo.core.evaluator import Evaluator
+from pymoo.core.population import Population
 from pymoo.optimize import minimize
 
 problem = get_problem("sphere")

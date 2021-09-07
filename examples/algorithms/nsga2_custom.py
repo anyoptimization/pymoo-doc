@@ -3,11 +3,11 @@ import string
 import numpy as np
 
 from pymoo.algorithms.moo.nsga2 import NSGA2
-from pymoo.model.crossover import Crossover
-from pymoo.model.duplicate import ElementwiseDuplicateElimination
-from pymoo.model.mutation import Mutation
-from pymoo.model.problem import Problem, ElementwiseProblem
-from pymoo.model.sampling import Sampling
+from pymoo.core.crossover import Crossover
+from pymoo.core.duplicate import ElementwiseDuplicateElimination
+from pymoo.core.mutation import Mutation
+from pymoo.core.problem import Problem, ElementwiseProblem
+from pymoo.core.sampling import Sampling
 from pymoo.optimize import minimize
 from pymoo.visualization.scatter import Scatter
 

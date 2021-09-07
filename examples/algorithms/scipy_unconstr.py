@@ -1,7 +1,7 @@
 import autograd.numpy as anp
 import numpy as np
 
-from pymoo.model.problem import Problem
+from pymoo.core.problem import Problem
 from pymoo.optimize import minimize
 from pymoo.vendor.vendor_scipy import CG, BFGS, Powell, NelderMead
 

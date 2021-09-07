@@ -3,7 +3,7 @@ import numpy as np
 
 from pymoo.algorithms.soo.nonconvex.ga import GA
 from pymoo.factory import get_problem
-from pymoo.model.callback import Callback
+from pymoo.core.callback import Callback
 from pymoo.optimize import minimize
 
 

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from pymoo.algorithms.soo.nonconvex.ga import GA
-from pymoo.model.repair import Repair
+from pymoo.core.repair import Repair
 from pymoo.operators.crossover.ox import OrderCrossover
 from pymoo.operators.mutation.inversion import InversionMutation
 from pymoo.operators.sampling.rnd import PermutationRandomSampling

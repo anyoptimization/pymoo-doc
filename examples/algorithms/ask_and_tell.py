@@ -1,6 +1,6 @@
 from pymoo.algorithms.soo.nonconvex.cmaes import CMAES
 from pymoo.factory import Problem
-from pymoo.model.evaluator import set_cv
+from pymoo.core.evaluator import set_cv
 
 from pymoo.util.termination.no_termination import NoTermination
 

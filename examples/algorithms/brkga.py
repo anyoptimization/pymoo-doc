@@ -1,7 +1,7 @@
 # START perm_prob
 import numpy as np
 
-from pymoo.model.problem import ElementwiseProblem
+from pymoo.core.problem import ElementwiseProblem
 
 
 class MyProblem(ElementwiseProblem):
@@ -21,7 +21,7 @@ class MyProblem(ElementwiseProblem):
 
 
 # START dupl
-from pymoo.model.duplicate import ElementwiseDuplicateElimination
+from pymoo.core.duplicate import ElementwiseDuplicateElimination
 
 
 class MyElementwiseDuplicateElimination(ElementwiseDuplicateElimination):

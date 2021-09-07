@@ -2,7 +2,7 @@ import os
 
 import numpy as np
 
-from pymoo.model.problem import Problem
+from pymoo.core.problem import Problem
 from pymoo.util.matlab_engine import install_matlab, MatlabEngine
 
 try:

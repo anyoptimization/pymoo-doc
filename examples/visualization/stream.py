@@ -4,7 +4,7 @@ from pyrecorder.video import Video
 
 
 from pymoo.factory import get_problem
-from pymoo.model.callback import Callback
+from pymoo.core.callback import Callback
 from pymoo.optimize import minimize
 from pymoo.visualization.pcp import PCP
 

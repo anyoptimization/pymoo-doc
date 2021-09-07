@@ -1,6 +1,6 @@
 import autograd.numpy as anp
 
-from pymoo.model.problem import Problem
+from pymoo.core.problem import Problem
 
 
 # always derive from the main problem for the evaluation

@@ -1,6 +1,6 @@
 import numpy as np
 
-from pymoo.model.problem import Problem
+from pymoo.core.problem import Problem
 
 
 class MyProblem(Problem):
@@ -21,7 +21,7 @@ class MyProblem(Problem):
         out["G"] = g1
 
 
-from pymoo.model.repair import Repair
+from pymoo.core.repair import Repair
 
 
 class MyRepair(Repair):

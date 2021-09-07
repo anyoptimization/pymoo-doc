@@ -1,5 +1,5 @@
 from pymoo.algorithms.base.genetic import GeneticAlgorithm
-from pymoo.model.population import Population
+from pymoo.core.population import Population
 
 
 class MemeticAlgorithm(GeneticAlgorithm):

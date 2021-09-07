@@ -3,7 +3,7 @@ import numpy as np
 from pymoo.algorithms.moo.rnsga2 import RNSGA2
 from pymoo.factory import get_problem
 from pymoo.indicators.rmetric import RMetric
-from pymoo.model.callback import Callback
+from pymoo.core.callback import Callback
 from pymoo.optimize import minimize
 
 problem = get_problem("zdt1", n_var=30)

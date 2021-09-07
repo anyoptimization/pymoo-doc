@@ -2,7 +2,7 @@ import numpy as np
 
 from pymoo.algorithms.soo.nonconvex.ga import GA
 from pymoo.factory import get_crossover, get_mutation, get_sampling, create_random_knapsack_problem
-from pymoo.model.repair import Repair
+from pymoo.core.repair import Repair
 from pymoo.optimize import minimize
 
 
