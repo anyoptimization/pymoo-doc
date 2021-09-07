@@ -1,37 +1,37 @@
 Model
 ==============================================================================
 
-.. autoclass:: pymoo.model.algorithm.Algorithm
+.. autoclass:: pymoo.core.algorithm.Algorithm
     :members:
 
-.. autoclass:: pymoo.model.sampling.Sampling
+.. autoclass:: pymoo.core.sampling.Sampling
     :members:
 
-.. autoclass:: pymoo.model.selection.Selection
+.. autoclass:: pymoo.core.selection.Selection
     :members:
 
-.. autoclass:: pymoo.model.mutation.Mutation
+.. autoclass:: pymoo.core.mutation.Mutation
     :members:
 
-.. autoclass:: pymoo.model.crossover.Crossover
+.. autoclass:: pymoo.core.crossover.Crossover
     :members:
 
-.. autoclass:: pymoo.model.survival.Survival
+.. autoclass:: pymoo.core.survival.Survival
     :members:
 
-.. autoclass:: pymoo.model.termination.Termination
+.. autoclass:: pymoo.core.termination.Termination
     :members:
 
-.. autoclass:: pymoo.model.indicator.Indicator
+.. autoclass:: pymoo.core.indicator.Indicator
     :members:
 
-.. autoclass:: pymoo.model.population.Population
+.. autoclass:: pymoo.core.population.Population
     :members:
 
-.. autoclass:: pymoo.model.individual.Individual
+.. autoclass:: pymoo.core.individual.Individual
     :members:
 
-.. autoclass:: pymoo.model.result.Result
+.. autoclass:: pymoo.core.result.Result
     :members:
 
 
