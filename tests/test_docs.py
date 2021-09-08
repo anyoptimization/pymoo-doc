@@ -6,7 +6,7 @@ from util import files_from_folder, run_ipynb, ROOT
 
 DOCS = os.path.join(ROOT, "source")
 
-OVERWRITE = True
+OVERWRITE = False
 
 SKIP = ["parallelization.ipynb", "video.ipynb", "modact.ipynb", "dascmop.ipynb"]
 
