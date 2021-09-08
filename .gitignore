@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+source/problems/dask-worker-space
+
 .idea
 **/.DS_Store
 **/.vscode

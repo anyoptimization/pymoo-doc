@@ -4,6 +4,7 @@ Cite Us
 If you have used our framework for research purposes, you can cite by :cite:`pymoo`:
 
 
+J. Blank and K. Deb, `pymoo: Multi-Objective Optimization in Python <https://ieeexplore.ieee.org/document/9078759>`_, in IEEE Access, vol. 8, pp. 89497-89509, 2020, doi: 10.1109/ACCESS.2020.2990567
 
 ::
 

@@ -28,11 +28,6 @@
    <a href="http://www.coin-lab.org" target="_blank">Computational Optimization and Innovation Laboratory (COIN)</a>
 
 
-.. |paper| raw:: html
-
-   <a href="https://ieeexplore.ieee.org/document/9078759" target="_blank">Paper</a>
-
-
 
 
 pymoo: Multi-objective Optimization in Python
@@ -42,7 +37,14 @@ pymoo: Multi-objective Optimization in Python
 .. admonition:: Overview
     :class: myOwnStyle
 
-    There are some breaking changes in **pymoo 0.5.0**. The package structure has been modified to distinguish between single- and multi-objective optimization more clearly. For instance, the implementation of PSO has been moved from *pymoo.algorithms.so_pso* to *pymoo.algorithms.soo.nonconvex.pso*. Furthermore, the elementwise problem is now defined by inheriting from *ElementwiseProblem* instead of setting a flag. Please see the corresponding tutorial pages for more information.
+    There are some breaking changes in **pymoo 0.5.0**.
+
+    - The module *pymoo.models* has been renamed to *pymoo.core*
+    - The package structure has been modified to distinguish between single- and multi-objective optimization more clearly. For instance, the implementation of PSO has been moved from *pymoo.algorithms.so_pso* to *pymoo.algorithms.soo.nonconvex.pso*.
+    - Furthermore, the **elementwise_evaluation** flag has been replaced by the *ElementwiseProblem* class to inherit from.
+
+    Please see the corresponding tutorial pages for more information.
+
 
 
 Our framework offers state of the art single- and multi-objective optimization algorithms and many
@@ -77,17 +79,34 @@ Furthermore, our framework offers a variety of different features which cover va
 
 
 
+List Of Algorithms
+********************************************************************************
+
+
+.. csv-table:: Algorithms available in pymoo
+   :header: "Algorithm", "Class", "Convenience", "Objective(s)", "Constraints", "Description"
+   :widths: 60, 10, 10, 10, 10, 100
+   :file: algorithms/algorithms.csv
+
+
+
+
+
 Cite Us
 ********************************************************************************
 
-If you have used our framework for research purposes, you can cite our journal |paper| (IEEE Early Access) with:
+If you have used our framework for research purposes, you can cite our publication by:
+
+| `J. Blank and K. Deb, pymoo: Multi-Objective Optimization in Python, in IEEE Access, vol. 8, pp. 89497-89509, 2020, doi: 10.1109/ACCESS.2020.2990567 <https://ieeexplore.ieee.org/document/9078759>`_
+|
+| BibTex:
 
 ::
 
     @ARTICLE{pymoo,
         author={J. {Blank} and K. {Deb}},
         journal={IEEE Access},
-        title={Pymoo: Multi-Objective Optimization in Python},
+        title={pymoo: Multi-Objective Optimization in Python},
         year={2020},
         volume={8},
         number={},
@@ -139,8 +158,7 @@ This makes not only our framework but, in general, multi-objective optimization 
 
 **(ii)** To offer more and more new algorithms and features, we are more than happy if somebody wants to contribute by developing code. You can see it as a
 win-win situation because your development will be linked to your publication(s), which
-can significantly increase your work awareness. Please note that we aim to keep a high level of code quality, and some refactoring might be suggested. We have prepared
-a list of `suggested contributions <contributions.html>`_.
+can significantly increase your work awareness. Please note that we aim to keep a high level of code quality, and some refactoring might be suggested.
 
 
 **(iii)** You like our framework, and you would like to use it for profit-making purposes?
@@ -188,13 +206,6 @@ Content
    license
 
 
-
-Indices and tables
-********************************************************************************
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 
 
