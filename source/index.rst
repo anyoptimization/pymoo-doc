@@ -47,7 +47,7 @@ pymoo: Multi-objective Optimization in Python
     - The package structure has been modified to distinguish between single- and multi-objective optimization more clearly. For instance, the implementation of PSO has been moved from *pymoo.algorithms.so_pso* to *pymoo.algorithms.soo.nonconvex.pso*.
     - Furthermore, the **elementwise_evaluation** flag has been replaced by the *ElementwiseProblem* class to inherit from.
 
-    Please see the corresponding tutorial pages for more information.
+    Enjoy our new release!
 
 
 
