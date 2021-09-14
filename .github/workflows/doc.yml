@@ -27,6 +27,7 @@ jobs:
           curl -L http://github.com/anyoptimization/pymoo/archive/${BRANCH_NAME}.zip --output pymoo.zip
           unzip -qq pymoo.zip
           pip install pymoo-${BRANCH_NAME}/
+          python -c "from pymoo.util.function_loader import is_compiled;print('Compiled Extensions: ', is_compiled())"
       - name: Jupyter Config
         run: |
           mkdir ~/.ipython
