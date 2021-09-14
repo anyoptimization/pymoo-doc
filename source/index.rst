@@ -5,6 +5,10 @@
    :keywords: Multi-objective Optimization, Evolutionary Algorithm, NSGA2
 
 
+.. |anyopt| raw:: html
+
+   <a href="https://anyoptimization.com" target="_blank">anyoptimization</a>
+
 
 .. |blankjul| raw:: html
 
@@ -16,11 +20,11 @@
 
 .. |github| raw:: html
 
-   <a href="https://github.com/msu-coinlab/pymoo" target="_blank">GitHub</a>
+   <a href="https://github.com/anyoptimization/pymoo" target="_blank">GitHub</a>
 
 .. |issues| raw:: html
 
-   <a href="https://github.com/msu-coinlab/pymoo/issues" target="_blank">Issue Tracker</a>
+   <a href="https://github.com/anyoptimization/pymoo/issues" target="_blank">Issue Tracker</a>
 
 
 .. |coin| raw:: html
@@ -123,7 +127,7 @@ News
 About
 ********************************************************************************
 
-This framework is developed and maintained by |blankjul| who is affiliated to the
+This framework is powered by |anyopt|, a Python research community. It is developed and maintained by |blankjul| who is affiliated to the
 |coin| supervised
 by |kdeb| at the Michigan State University in
 East Lansing, Michigan, USA.
@@ -146,7 +150,7 @@ Moreover, any kind of **contribution** is more than welcome:
 
 .. |star| image:: resources/images/star.png
   :height: 25
-  :target: https://github.com/msu-coinlab/pymoo
+  :target: https://github.com/anyoptimization/pymoo
 
 .. raw:: html
 

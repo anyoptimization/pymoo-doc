@@ -45,6 +45,18 @@
 <link rel="icon" type="image/png" href="{{ pathto('_static/favicon.ico', 1) }}"/>
 {%- endblock %}
 
+{%- block js %}
+{{ super() }}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E228X7JZK9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E228X7JZK9');
+</script>
+{%- endblock %}
+
 
 {% set is_single_page = (theme_single_page == True) or (theme_single_page == "True") %}
 {% if is_single_page %}
