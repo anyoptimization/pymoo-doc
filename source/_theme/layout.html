@@ -47,14 +47,7 @@
 
 {%- block js %}
 {{ super() }}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E228X7JZK9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-E228X7JZK9');
-</script>
 {%- endblock %}
 
 
@@ -68,16 +61,24 @@
 {% block extrahead %}
 {{ super() }}
 
-{% if pageurl %}
-<!-- Opengraph tags -->
-<meta property="og:url" content="{{ pageurl }}"/>
-<meta property="og:type" content="article"/>
-<meta property="og:title" content="{% if pagetitle %}{{ pagetitle | e }}{% else %}{{ docstitle | e }}{% endif %}"/>
-<meta property="og:description" content="{{ page_description | e }}"/>
-{% if logourl %}
-<meta property="og:image" content="{{ logourl }}"/>{% endif %}
-<meta name="twitter:card" content="summary"/>
-{% endif %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E228X7JZK9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E228X7JZK9');
+    </script>
+
+    {% if pageurl %}
+        <!-- Opengraph tags -->
+        <meta property="og:url" content="{{ pageurl }}"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="{% if pagetitle %}{{ pagetitle | e }}{% else %}{{ docstitle | e }}{% endif %}"/>
+        <meta property="og:description" content="{{ page_description | e }}"/>
+        {% if logourl %}
+        <meta property="og:image" content="{{ logourl }}"/>{% endif %}
+        <meta name="twitter:card" content="summary"/>
+    {% endif %}
 {% endblock %}
 
 

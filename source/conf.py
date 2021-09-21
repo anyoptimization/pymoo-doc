@@ -36,6 +36,9 @@ author = 'Julian Blank'
 version = pymoo.__version__
 release = version
 
+version = '0.5.0'
+release = version
+
 # ===========================================================================
 # General
 # ===========================================================================
@@ -123,7 +126,7 @@ if DEBUG:
     # exclude_patterns.append("problems/many/*")
     # exclude_patterns.append("problems/constrained/*")
     #
-    # # exclude_patterns.append("algorithms*")
+    # exclude_patterns.append("algorithms*")
     # exclude_patterns.append("customization*")
     # exclude_patterns.append("operators*")
     # exclude_patterns.append("visualization*")
@@ -206,9 +209,3 @@ numpydoc_use_blockquotes = False
 # Deprecated since version edit: your HTML template instead. Whether to insert an edit link after docstrings.
 numpydoc_edit_link = False
 
-
-# ===========================================================================
-# MathJax (local copy)
-# ===========================================================================
-
-mathjax_path = "mathjax/latest.js?config=TeX-AMS-MML_HTMLorMML-full.js"
