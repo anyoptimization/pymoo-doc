@@ -42,7 +42,7 @@ jobs:
           refs/heads/release
           ', github.ref)
         run: |
-          pytest tests/test_docs.py --exitfirst
+          pytest tests/test_docs.py --overwrite --exitfirst
       - name: Compile
         run: |
           make html
